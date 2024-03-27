@@ -25,6 +25,7 @@ header{
 .wrapcontainer{
     height: 100%;
     background-color: #141922;
+    overflow:scroll;
 }
 
 footer{
