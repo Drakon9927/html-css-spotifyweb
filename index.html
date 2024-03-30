@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -149,6 +150,29 @@
 
         </div>
 
+        <h3>Artisti più popolari</h3>
+        <p class="subtitle">Più ascolti, più accurati saranno i suggerimenti</p>
+        <div class="container">
+
+            <!-- box 1 -->
+          <div class="box">
+            <div class="image-container">
+              <img class="round-image" src="./img/youg.jpeg" alt="Album Image">
+            </div>
+            <h4>Release Radar</h4>
+          </div>
+
+          <!--  box 2 -->
+          <div class="box">
+            <div class="image-container">
+              <img class="round-image" src="./img/einaudi.jpeg" alt="Album Image">
+            </div>
+            <h4>Daily Mix 1 </h4>
+          </div>
+
+        </div>
+
+
 
        
     </main>
@@ -156,16 +180,61 @@
 
     
     <footer>
+        <!-- Contenitore a sinistra -->
+        <div class="fbox flexrow">
+          <div class="minimage-container">
+            <img src="./img/sinister.jpeg" alt="">
 
-        <div class="leftbox">
+          </div>
+
+          <div class="textbox flexcolumn">
+            <h5>Sinister</h5>
+            <p class="subtitle">Brano Nome</p>
+          </div>
+
+          <div class="textbox flexrow">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-folder"></i>
+          </div>
 
         </div>
 
-        <div class="midbox">
+        <!-- Contenitore centrale -->
+        <div class="midbox flexcolumn">
+
+          <div class="textbox flexrow">
+            <i class="fa fa-random" style="font-size:24px"></i>
+            <i class="fa fa-step-backward" style="font-size:24px"></i>
+            <i class="fa fa-play-circle-o" style="font-size:24px"></i>
+            <i class="fa fa-step-forward" style="font-size:24px"></i>
+            <i class="fa fa-undo" style="font-size:24px"></i>
+
+          </div>
+
+          <div class="bottombox flexrow">
+            <p>0:25</p>
+
+            <div class="play-bar">
+              <div class="progress"></div>
+            </div>
+         
+
+            <p>4:35</p>
+
+          </div>
 
         </div>
 
-        <div class="rightbox">
+        <div class="fbox flexrow">
+          <div class="textbox flexrow">
+            <i class="fa fa-list"></i>
+            <i class="fa fa-desktop"></i>
+            <i class="fa fa-volume-up"></i>
+          </div>
+
+          <div class="play-bar2">
+            <div class="progress"></div>
+          </div>
 
         </div>
 
