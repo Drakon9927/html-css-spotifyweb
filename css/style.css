@@ -20,6 +20,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .upgradediv{
@@ -116,6 +117,12 @@ hr{
     justify-content: flex-end;
 }
 
+nav{
+    position: relative;
+    z-index: 1;
+    margin-left: 15rem;
+}
+
 nav, nav>ul{
     background-color: #141922;
     gap: 20px;
@@ -147,7 +154,7 @@ nav .hov6:hover hr {
     opacity: 1;
 }
 
-
+/* ******* */
 
 .flexrow{
     display: flex;
@@ -191,11 +198,13 @@ header i, header span{
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+    justify-content: flex-start;
+    overflow: visible;
   }
   
   .box {
     width: calc(16.6666% - 1rem);
-    margin-right: 20px;
+    margin: 0 0.5rem 1rem 0.5rem;
   }
   
   .image-container {
@@ -281,7 +290,7 @@ h5{
 }
 
 .fbox i{
-    color: lightslategray;
+    color: #7A7C81;
     margin: 0 15px;
 }
 
@@ -345,7 +354,42 @@ header p{
 }
 
 
+/* Media Query */
+
+    /* mid */
+    @media all and (max-width:992px) {
+        nav ul {
+            flex-wrap: wrap;
+        }
+
+        main>.container{
+            flex-wrap: wrap;
+        }
+        
+        .box {
+            min-width: 140px; 
+        }
+
+        .minimage-container {
+            width: 20%;
+        }
 
 
 
 
+    
+    }
+
+    @media all and (max-width:748px) {
+
+        .box {
+            min-width: 200px; 
+        }
+
+        .fbox>.textbox:last-child{
+            flex-direction: column;
+        }
+
+
+
+    }
