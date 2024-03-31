@@ -129,6 +129,26 @@ nav>ul{
     margin-bottom: 10px;
 }
 
+/* Nav hovers */
+
+nav hr{
+    opacity: 0;
+    width: 30px;
+    border-color: lightgreen;
+    margin: 0 auto;
+}
+
+nav .hov1:hover hr,
+nav .hov2:hover hr,
+nav .hov3:hover hr,
+nav .hov4:hover hr,
+nav .hov5:hover hr,
+nav .hov6:hover hr {
+    opacity: 1;
+}
+
+
+
 .flexrow{
     display: flex;
     flex-direction: row;
@@ -180,12 +200,33 @@ header i, header span{
   
   .image-container {
     width: 100%;
+    position: relative;
   }
   
   .image-container img {
     width: 100%;
   }
+
+  .image-container i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    font-size: 500%;
+    z-index: 1;
+  }
+
+  .image-container:hover i {
+    opacity: 1;
+  }
   
+  .image-container:hover img {
+    filter: brightness(60%);
+  }
+
   h4 {
     color: white;
     margin-top: 10px;
@@ -283,12 +324,16 @@ h5{
     color: white;
 }
 
+.fbox:last-child{
+    justify-content: flex-end;
+}
+
 .fbox:last-child>.textbox>i{
     color: white;
 }
 
 .play-bar2{
-    width: 100%;
+    width: 30%;
     height: 5px;
     background-color: #5A5A5A;
     border-radius: 5px;
