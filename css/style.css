@@ -136,6 +136,10 @@ nav>ul{
     margin-bottom: 10px;
 }
 
+.dnone-desktop{
+    display: none;
+}
+
 /* Nav hovers */
 
 nav hr{
@@ -379,7 +383,7 @@ header p{
 
     
     }
-
+        /* S */
     @media all and (max-width:748px) {
 
         .box {
@@ -389,6 +393,51 @@ header p{
         .fbox>.textbox:last-child{
             flex-direction: column;
         }
+
+    }
+        /* XS */
+    @media all and (max-width:576px) {
+
+        .dnone{
+            display: none;
+        }
+
+        .dhidden{
+            opacity: 0;
+        }
+
+        header{
+            width: 4rem;
+        }
+
+        main{
+            width: calc(100% -  4rem);
+            margin-left: 4rem;
+        }
+
+        nav{
+            margin-left: 4rem;
+        }
+
+        .bottombox i{
+            font-size: 28px;
+        }
+
+        .upperbox>img{
+            width: 120%;
+        }
+
+        .dnone-desktop{
+            display: block;
+        }
+
+        .box{
+            min-width: 190px;
+        }
+
+
+
+        
 
 
 
